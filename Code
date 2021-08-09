@@ -12,7 +12,7 @@ object CaesarCipher {
     println(D('k', 3, alphabet))
 
 
-    //(12)->Caesar Cipher
+    //Caesar Cipher
     val cipher = (algo:(Char, Int, String)=>Char, s:String, key:Int,  a:String)=>s.map(algo(_, key, a))
 
     val ct = cipher(E, "hello", 5, alphabet)
